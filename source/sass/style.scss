@@ -1,3 +1,30 @@
-h1 {
-  color: red;
-}
+/* index.html */
+@import "fonts.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "normolize.scss";
+@import "blocks/page-body.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/bicycles-types-list.scss";
+@import "blocks/bicycles-types.scss";
+@import "blocks/contacts.scss";
+@import "blocks/invite-section.scss";
+@import "blocks/logo-desk.scss";
+@import "blocks/logo-tablet-mob.scss";
+@import "blocks/menu-list.scss";
+@import "blocks/menu-mob.scss";
+@import "blocks/menu.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/tagline-info.scss";
+@import "blocks/tagline.scss";
+@import "blocks/video.scss";
+@import "blocks/wrapper-form.scss";
+@import "blocks/wrapper-map.scss";
+@import "blocks/wrapper-post-tel.scss";
+@import "blocks/wrapper-tagline.scss";
+@import "blocks/wrapper-video.scss";
+@import "blocks/wrapper-main-page.scss";

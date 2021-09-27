@@ -1,0 +1,33 @@
+.bicycles-types-list {
+  display: flex;
+  justify-content: space-between;
+  width:1126px;
+  margin:51px 0 0 0;
+  padding:0;
+}
+.bicycles-types-list__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+
+  p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+}
+.bicycles-types-list__element--road {
+  height:559px;
+}
+.bicycles-types-list__element--mount {
+  margin:39px;
+  height:622px;
+}
+.bicycles-types-list__element--child {
+  height:569px;
+}
