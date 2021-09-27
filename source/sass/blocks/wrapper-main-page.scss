@@ -3,9 +3,27 @@
   top:0px;
   left:0;
   right:0;
-  height:825px;
+  height: 1250px;
   z-index: -1;
   background-image: url("../../img/MainDes.jpg");
   background-repeat: no-repeat;
   background-size:100% 100%;
+
+  @media (max-width: $super-extra-width) {
+    height:1050px;
+    background-image: url("../../img/MainDesSuperExtra.jpg");
+  }
+
+  @media (max-width: $extra-width) {
+    height:930px;
+    background-image: url("../../img/MainDesExtra.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    height:825px;
+  }
+
+  @media (max-width: $desktop-medium-width) {
+    height:675px;
+  }
 }

@@ -4,6 +4,22 @@
   justify-content:space-between;
   align-items: center;
   width:873px;
-  height:763px;
+  height:1188px;
   margin:0 auto;
+
+  @media (max-width: $super-extra-width) {
+    height:988px;
+  }
+
+  @media (max-width: $extra-width) {
+    height:868px;
+  }
+
+  @media (max-width: $desktop-width) {
+    height:763px;
+  }
+
+  @media (max-width: $desktop-medium-width) {
+    height:613px;
+  }
 }

@@ -4,6 +4,10 @@
   width:1168px;
   margin:50px 0 0 0;
   padding:0;
+
+  @media (max-width: $desktop-medium-width) {
+    width:1000px;
+  }
 }
 .advantages-list__element {
   display: flex;
@@ -13,6 +17,10 @@
   height:130px;
   margin:0;
   padding:0;
+
+  @media (max-width: $desktop-medium-width) {
+    width:240px;
+  }
 }
 .advantages-list__element-number {
   font-weight: 700;

@@ -1,0 +1,47 @@
+.wrapper-post-tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+  width:558px;
+  height:22px;
+  margin:39px 0 98px 0;
+}
+
+.wrapper-post-tel__post {
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+  padding:0 0 0 41px;
+
+  &:before {
+    content:"";
+    position: absolute;
+    top:6px;
+    left:-4px;
+    width:31px;
+    height:24px;
+    background-image: url("../../img/post.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.wrapper-post-tel__tel {
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+  padding:0 0 0 37px;
+
+  &:before {
+    content:"";
+    position: absolute;
+    top:3px;
+    left:0;
+    width:20px;
+    height:29px;
+    background-image: url("../../img/tel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
