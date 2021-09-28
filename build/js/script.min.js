@@ -26,12 +26,12 @@ headerToggle.addEventListener('click', () => {
 });
 
 menuMob.addEventListener('click', (evt) => {
-		if (evt.target.tagName === 'A') {
-			menuMob.classList.add('menu-mob--closed');
-      menuMob.classList.remove('menu-mob--opened');
-      headerToggle.classList.remove('page-header__menu-toggle--opened')
-      pageBody.classList.remove('page-body--no-scroll');
-		}
+  if (evt.target.tagName === 'A') {
+    menuMob.classList.add('menu-mob--closed');
+    menuMob.classList.remove('menu-mob--opened');
+    headerToggle.classList.remove('page-header__menu-toggle--opened')
+    pageBody.classList.remove('page-body--no-scroll');
+  }
 });
 
 const isEscEvent = (evt) => {
@@ -39,13 +39,13 @@ const isEscEvent = (evt) => {
 };
 
 const onMenuEscKeydown = (evt) => {
-	if (isEscEvent(evt)) {
-		evt.preventDefault();
+  if (isEscEvent(evt)) {
+    evt.preventDefault();
     menuMob.classList.add('menu-mob--closed');
     menuMob.classList.remove('menu-mob--opened');
     headerToggle.classList.remove('page-header__menu-toggle--opened')
     pageBody.classList.remove('page-body--no-scroll');
-	}
+  }
 };
 
 //for smooth scroll js
