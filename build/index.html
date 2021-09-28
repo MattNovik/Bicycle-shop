@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <title>Bicycles</title>
+  <link rel="preload" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="page-header page-header--nojs">
@@ -42,8 +42,8 @@
         <p class="tagline-info">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="wrapper-form">
+        <p class="wrapper-form__name">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <form class="wrapper-form__form" action="post">
-          <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
           <input type="text" placeholder="Введите Ваше Имя">
           <label for=""></label>
           <input type="number" placeholder="Введите Ваш номер телефона">
@@ -78,22 +78,28 @@
       <ul class="bicycles-types-list">
         <li class="bicycles-types-list__element bicycles-types-list__element--road">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.png 1x, img/RoadBicDes@2x.png 2x">
-            <img src="img/RoadBicTabMob.png" srcset="img/RoadBicTabMob.png 1x, img/RoadBicTabMob@2x.png 2x" alt="road-bicycle" width="342" height="503">
+            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.webp 1x, img/RoadBicDes@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.jpg 1x, img/RoadBicDes@2x.jpg 2x">
+            <source srcset="img/RoadBicTabMob.webp 1x, img/RoadBicTabMob@2x.webp 2x" type="image/webp">
+            <img src="img/RoadBicTabMob.jpg" srcset="img/RoadBicTabMob.jpg 1x, img/RoadBicTabMob@2x.jpg 2x" alt="road-bicycle" width="342" height="503">
           </picture>
           <p>Дорожный велосипед</p>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--mount">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/MountBicDes.png 1x, img/MountBicDes@2x.png 2x">
-            <img src="img/MountBicTabMob.png" srcset="img/MountBicTabMob.png 1x, img/MountBicTabMob@2x.png 2x" alt="mount-bicycle" width="342" height="566">
+            <source media="(min-width: 1024px)" srcset="img/MountBicDes.webp 1x, img/MountBicDes@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/MountBicDes.jpg 1x, img/MountBicDes@2x.jpg 2x">
+            <source srcset="img/MountBicTabMob.webp 1x, img/MountBicTabMob@2x.webp 2x" type="image/webp">
+            <img src="img/MountBicTabMob.jpg" srcset="img/MountBicTabMob.jpg 1x, img/MountBicTabMob@2x.jpg 2x" alt="mount-bicycle" width="342" height="566">
           </picture>
           <p>Горный велосипед</p>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--child">
           <picture>
-            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.png 1x, img/ChildBicDes@2x.png 2x">
-            <img src="img/ChildBicTabMob.png" srcset="img/ChildBicTabMob.png 1x, img/ChildBicTabMob@2x.png 2x" alt="child-bicycle" width="342" height="512">
+            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.webp 1x, img/ChildBicDes@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.jpg 1x, img/ChildBicDes@2x.jpg 2x">
+            <source srcset="img/ChildBicTabMob.webp 1x, img/ChildBicTabMob@2x.webp 2x" type="image/webp">
+            <img src="img/ChildBicTabMob.jpg" srcset="img/ChildBicTabMob.jpg 1x, img/ChildBicTabMob@2x.jpg 2x" alt="child-bicycle" width="342" height="512">
           </picture>
           <p>Детский велосипед</p>
         </li>
@@ -103,7 +109,7 @@
       <h2 class="video__name">Видео про велосипеды</h2>
       <p class="video__info">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="wrapper-video">
-        <iframe src="https://www.youtube.com/embed/cGzQWgOuAfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/cGzQWgOuAfg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
     </section>
   </main>
@@ -112,7 +118,7 @@
       <h2 class="contacts__name">Как нас найти?</h2>
       <p class="contacts__place">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="wrapper-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.320894616211245!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1632735203862!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.320894616211245!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1632735203862!5m2!1sru!2sru" title="google Map" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="wrapper-post-tel">
         <a href="mailto:puteshestviemechta@gmail.ru" class="wrapper-post-tel__post">puteshestviemechta@gmail.ru</a>

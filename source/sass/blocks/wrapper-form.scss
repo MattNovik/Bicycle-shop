@@ -5,6 +5,7 @@
   @media (max-width: $tablet-width) {
     width:321px;
     height:273px;
+
   }
 
   @media (max-width: $mobile-width-only) {
@@ -22,21 +23,6 @@
 
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
-  }
-
-  legend {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: -0.005em;
-    padding:0;
-
-    @media (max-width: $tablet-width) {
-      font-size: 18px;
-      color: #000000;
-      margin: 0 0 30px 0;
-    }
   }
 
   input {
@@ -80,5 +66,20 @@
     @media (max-width: $tablet-width) {
       height:51px;
     }
+  }
+}
+
+.wrapper-form__name {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  padding:0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    color: #000000;
+    margin: 0 0 30px 0;
   }
 }
