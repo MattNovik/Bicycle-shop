@@ -4,4 +4,9 @@
   line-height: 64px;
   letter-spacing: -0.005em;
   margin:0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }

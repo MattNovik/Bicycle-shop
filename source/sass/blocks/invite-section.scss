@@ -20,6 +20,13 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:613px;
+    height:543px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    height:569px;
+    width:100%;
+    margin: 84px auto 0;
   }
 }

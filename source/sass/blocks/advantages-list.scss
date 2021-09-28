@@ -8,6 +8,16 @@
   @media (max-width: $desktop-medium-width) {
     width:1000px;
   }
+
+  @media (max-width: $tablet-width) {
+    width:556px;;
+    display: grid;
+    grid-template-columns: 263px 263px;
+    grid-template-rows: 124px 124px;
+    grid-row-gap:40px;
+    grid-column-gap:30px;
+    margin:30px auto 0;
+  }
 }
 .advantages-list__element {
   display: flex;

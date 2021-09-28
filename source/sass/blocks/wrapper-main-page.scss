@@ -24,6 +24,10 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:675px;
+    height:605px;
+  }
+
+  @media (max-width: $tablet-width) {
+    height:340px;
   }
 }

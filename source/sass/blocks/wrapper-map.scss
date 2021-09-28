@@ -1,3 +1,17 @@
 .wrapper-map {
   margin:42px 0 0 0;
+
+  iframe {
+    width:957px;
+    height:530px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin:20px 0 0 0;
+
+    iframe {
+      width:698px;
+      height:545px;
+    }
+  }
 }

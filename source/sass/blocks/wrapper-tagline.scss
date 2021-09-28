@@ -5,4 +5,10 @@
   align-items: flex-start;
   width:393px;
   height:267px;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    height:126px;
+    width:435px;
+  }
 }

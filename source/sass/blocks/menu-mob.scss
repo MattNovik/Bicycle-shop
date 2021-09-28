@@ -1,0 +1,5 @@
+.menu-mob {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

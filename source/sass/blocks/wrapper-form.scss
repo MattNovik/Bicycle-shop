@@ -1,6 +1,11 @@
 .wrapper-form {
   width:327px;
   height:263px;
+
+  @media (max-width: $tablet-width) {
+    width:321px;
+    height:273px;
+  }
 }
 
 .wrapper-form__form {
@@ -8,7 +13,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height:263px;
+  height:100%;
+
+  @media (max-width: $tablet-width) {
+    justify-content: flex-start;
+  }
 
   legend {
     font-weight: 600;
@@ -17,6 +26,12 @@
     text-align: center;
     letter-spacing: -0.005em;
     padding:0;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      color: #000000;
+      margin: 0 0 30px 0;
+    }
   }
 
   input {
@@ -35,6 +50,10 @@
       color:$dark;
       opacity: 0.5;
     }
+
+    @media (max-width: $tablet-width) {
+      margin:0 0 20px 0;
+    }
   }
 
   button {
@@ -51,6 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000
+    color: #000000;
+
+    @media (max-width: $tablet-width) {
+      height:51px;
+    }
   }
 }

@@ -10,6 +10,11 @@
   @media (max-width: $desktop-medium-width) {
     height:940px;
   }
+
+  @media (max-width: $tablet-width) {
+    height:auto;
+    margin:70px 0 0 0;
+  }
 }
 
 .bicycles-types__name {
@@ -19,4 +24,10 @@
   letter-spacing: -0.005em;
   color: $dark;
   margin:149px 0 0 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 41px;
+    margin:50px 0 0 0;
+  }
 }

@@ -1,4 +1,8 @@
 .logo-desk {
   width:67px;
   height:20px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

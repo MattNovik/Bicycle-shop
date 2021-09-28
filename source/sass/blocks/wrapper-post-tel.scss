@@ -5,6 +5,10 @@
   width:558px;
   height:22px;
   margin:39px 0 98px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 20px 0 53px 0;
+  }
 }
 
 .wrapper-post-tel__post {
