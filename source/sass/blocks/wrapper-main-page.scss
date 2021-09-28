@@ -43,6 +43,9 @@
     height:340px;
     background-image: url("../img/MainTab.jpg");
 
+    &.wrapper-main-page--nojs {
+      top:330px;
+    }
     @media (min-resolution: 2dppx) {
       background-image: url("../img/MainTab@2x.png");
     }

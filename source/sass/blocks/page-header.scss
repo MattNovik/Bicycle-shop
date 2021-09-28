@@ -29,6 +29,17 @@
   }
 }
 
+.page-header--nojs {
+
+  @media (max-width: $tablet-width) {
+    margin:0 0 330px 0;
+
+    .page-header__menu-toggle {
+      display: none;
+    }
+  }
+}
+
 .page-header__menu-toggle {
   position: absolute;
   top:0;

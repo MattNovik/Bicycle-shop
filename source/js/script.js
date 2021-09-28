@@ -1,11 +1,13 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var menuMob = document.querySelector('.menu-mob');
-var headerToggle = document.querySelector('.page-header__menu-toggle');
-var pageBody = document.querySelector('.page-body');
+const pageHeader = document.querySelector('.page-header');
+const menuMob = document.querySelector('.menu-mob');
+const headerToggle = document.querySelector('.page-header__menu-toggle');
+const pageBody = document.querySelector('.page-body');
+const wrapperMainPage = document.querySelector('.wrapper-main-page');
 
 pageHeader.classList.remove('page-header--nojs');
 menuMob.classList.remove('menu-mob--nojs');
+wrapperMainPage.classList.remove('wrapper-main-page--nojs');
 
 headerToggle.addEventListener('click', () => {
   if (menuMob.classList.contains('menu-mob--closed')) {

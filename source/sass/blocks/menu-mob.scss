@@ -19,5 +19,25 @@
 		background: #fff;
 		z-index: 20;
   }
+
+  &.menu-mob--nojs {
+
+		@media (max-width:$tablet-width) {
+      position: absolute;
+			height:150px;
+			width:100%;
+      top:50px;
+      z-index: 0;
+
+			.menu-list {
+				margin:0;
+			}
+
+			&.menu-mob--closed {
+				display: flex;
+			}
+
+		}
+	}
 }
 
