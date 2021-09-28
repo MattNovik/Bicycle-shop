@@ -5,18 +5,30 @@
   right:0;
   height: 1250px;
   z-index: -1;
-  background-image: url("../../img/MainDes.jpg");
+  background-image: url("../img/MainDes.jpg");
   background-repeat: no-repeat;
   background-size:100% 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/MainDes@2x.png");
+  }
+
   @media (max-width: $super-extra-width) {
     height:1050px;
-    background-image: url("../../img/MainDesSuperExtra.jpg");
+    background-image: url("../img/MainDesSuperExtra.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/MainDesSuperExtra@2x.jpg");
+    }
   }
 
   @media (max-width: $extra-width) {
     height:930px;
-    background-image: url("../../img/MainDesExtra.jpg");
+    background-image: url("../img/MainDesExtra.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/MainDesExtra@2x.jpg");
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -29,11 +41,19 @@
 
   @media (max-width: $tablet-width) {
     height:340px;
-    background-image: url("../../img/MainTab.jpg");
+    background-image: url("../img/MainTab.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/MainTab@2x.png");
+    }
   }
 
   @media (max-width: $mobile-width-only) {
     height:390px;
-    background-image: url("../../img/MainMob.jpg");
+    background-image: url("../img/MainMob.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/MainMob@2x.png");
+    }
   }
 }

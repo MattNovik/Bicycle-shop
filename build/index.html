@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <h1 class="visibility-hidden"></h1>
     <div class="page-header__wrapper page-header__wrapper--desk">
       <nav class="menu">
@@ -21,7 +21,7 @@
       </nav>
     </div>
     <div class="page-header__wrapper page-header__wrapper--tablet-mob">
-      <a href="#" class="logo-tablet-mob"><img src="./img/logo.svg" alt="" width="67" height="20" class="logo logo--image"></a>
+      <a href="#" class="logo-tablet-mob"><img src="img/logo.svg" alt="logo Bicycle" width="67" height="20" class="logo logo--image"></a>
       <span class="page-header__menu-toggle"></span>
       <nav class="menu-mob">
         <ul class="menu-list">
@@ -37,7 +37,7 @@
     <div class="wrapper-main-page"></div>
     <section class="invite-section">
       <div class="wrapper-tagline">
-        <a href="#" class="logo-desk"><img src="./img/logo.svg" alt="" width="67" height="20" class="logo logo--image"></a>
+        <a href="#" class="logo-desk"><img src="img/logo.svg" alt="logo Bicycle" width="67" height="20" class="logo logo--image"></a>
         <h2 class="tagline">Мы продаем велосипеды</h2>
         <p class="tagline-info">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
@@ -77,15 +77,24 @@
       <h2 class="bicycles-types__name">Виды велосипедов</h2>
       <ul class="bicycles-types-list">
         <li class="bicycles-types-list__element bicycles-types-list__element--road">
-          <img src="./img/RoadBicDes.png" alt="road-bicycle" width="342" height="503">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.png 1x, img/RoadBicDes@2x.png 2x">
+            <img src="img/RoadBicTabMob.png" srcset="img/RoadBicTabMob.png 1x, img/RoadBicTabMob@2x.png 2x" alt="road-bicycle" width="342" height="503">
+          </picture>
           <p>Дорожный велосипед</p>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--mount">
-          <img src="./img/MountBicDes.png" alt="road-bicycle" width="342" height="566">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/MountBicDes.png 1x, img/MountBicDes@2x.png 2x">
+            <img src="img/MountBicTabMob.png" srcset="img/MountBicTabMob.png 1x, img/MountBicTabMob@2x.png 2x" alt="mount-bicycle" width="342" height="566">
+          </picture>
           <p>Горный велосипед</p>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--child">
-          <img src="./img/ChildBicDes.png" alt="road-bicycle" width="342" height="512">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.png 1x, img/ChildBicDes@2x.png 2x">
+            <img src="img/ChildBicTabMob.png" srcset="img/ChildBicTabMob.png 1x, img/ChildBicTabMob@2x.png 2x" alt="child-bicycle" width="342" height="512">
+          </picture>
           <p>Детский велосипед</p>
         </li>
       </ul>
@@ -111,6 +120,6 @@
       </div>
     </section>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
