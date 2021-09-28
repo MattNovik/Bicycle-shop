@@ -6,6 +6,11 @@
     width:321px;
     height:273px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    width:288px;
+    height:290px;
+  }
 }
 
 .wrapper-form__form {

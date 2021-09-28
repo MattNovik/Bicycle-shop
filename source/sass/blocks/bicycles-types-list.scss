@@ -16,6 +16,12 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  @media (max-width: $mobile-width-only) {
+    align-items: center;
+    flex-direction: column;
+    margin:30px 0 50px 0;
+  }
 }
 .bicycles-types-list__element {
   position: relative;
@@ -98,6 +104,14 @@
       border: 18px solid $main;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+
+    &:before {
+      left:-24px;
+    }
+  }
 }
 .bicycles-types-list__element--mount {
   margin:39px 50px 0;
@@ -151,6 +165,10 @@
       content:none;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin:40px 0 0 0;
+  }
 }
 .bicycles-types-list__element--child {
   height:569px;
@@ -190,6 +208,14 @@
       width:68px;
       height:68px;
       border: 13px solid #0AD9C6;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin:40px 0 0 0;
+
+    &:before {
+      right:-15px;
     }
   }
 }

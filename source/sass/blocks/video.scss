@@ -10,6 +10,10 @@
   @media (max-width: $tablet-width) {
     height:413px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    height:384px;
+  }
 }
 
 .video__name {
@@ -21,6 +25,11 @@
 
   @media (max-width: $tablet-width) {
     margin:70px 0 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    margin:84px 0 0 0;
   }
 }
 
@@ -37,5 +46,9 @@
 
   @media (max-width: $tablet-width) {
     width: 429px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
   }
 }

@@ -11,4 +11,9 @@
     height:126px;
     width:435px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    height:200px;
+    width:288px;
+  }
 }

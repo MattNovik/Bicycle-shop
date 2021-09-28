@@ -29,5 +29,11 @@
 
   @media (max-width: $tablet-width) {
     height:340px;
+    background-image: url("../../img/MainTab.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height:390px;
+    background-image: url("../../img/MainMob.jpg");
   }
 }

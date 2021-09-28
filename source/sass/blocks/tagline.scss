@@ -6,6 +6,8 @@
   margin:0;
 
   @media (max-width: $tablet-width) {
+    width::100%;
+    text-align: center;
     font-size: 30px;
     line-height: 42px;
   }

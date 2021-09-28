@@ -29,4 +29,9 @@
     width:100%;
     margin: 84px auto 0;
   }
+
+  @media (max-width: $mobile-width-only) {
+    height:630px;
+    margin: 70px auto 0;
+  }
 }

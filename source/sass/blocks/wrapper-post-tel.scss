@@ -9,6 +9,13 @@
   @media (max-width: $tablet-width) {
     margin: 20px 0 53px 0;
   }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    width:288px;
+    height:auto;
+    margin: 31px 0 51px 0;
+  }
 }
 
 .wrapper-post-tel__post {
@@ -28,6 +35,10 @@
     background-image: url("../../img/post.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin:0 0 22px 0;
   }
 }
 .wrapper-post-tel__tel {

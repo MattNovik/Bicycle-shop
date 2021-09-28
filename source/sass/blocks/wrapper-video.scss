@@ -17,4 +17,11 @@
     width:503px;
     height:282px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    top:271px;
+    left:calc(50% - 144px);
+    width:288px;
+    height:161px;
+  }
 }
