@@ -6,6 +6,8 @@
   width:873px;
   height:1188px;
   margin:0 auto;
+  box-sizing: border-box;
+  padding:15px 0 0 0;
 
   @media (max-width: $super-extra-width) {
     height:988px;
@@ -25,9 +27,10 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    height:569px;
+    height:549px;
     width:100%;
     margin: 84px auto 0;
+    padding:0;
   }
 
   @media (max-width: $mobile-width-only) {

@@ -1,0 +1,10 @@
+.logo-tablet-mob {
+
+  @media (max-width: $tablet-width) {
+    margin:20px 0 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin:25px 0 0 -5px;
+  }
+}
