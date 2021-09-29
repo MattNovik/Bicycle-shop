@@ -18,6 +18,9 @@
 
 .menu-list__element {
   margin:21px 0 9px 0;
+
+
+
   a {
     color:#fff;
     line-height: 32px;
@@ -33,6 +36,10 @@
     background: #F6F6F6;
     margin:0 0 30px 0;
     padding:17px 0 17px 18px;
+
+    &:hover {
+      background:#666161 ;
+    }
 
     a {
       width:100%;

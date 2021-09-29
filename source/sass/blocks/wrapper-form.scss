@@ -21,6 +21,13 @@
   justify-content: space-between;
   height:100%;
 
+  &.wrapper-form__form--error {
+
+    input {
+      border:solid 1px red;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     justify-content: flex-start;
   }
@@ -28,11 +35,15 @@
   input {
     width:100%;
     height:48px;
-    border: 1px solid #C9CCD4;
+    border: 2px solid #C9CCD4;
     outline:none;
     box-sizing: border-box;
     border-radius: 6px;
     padding:14px 0 10px 29px;
+
+    &:focus {
+      border:2px solid $main;
+    }
 
     &::placeholder {
       font-weight: 400;
@@ -62,6 +73,10 @@
     align-items: center;
     justify-content: center;
     color: #000000;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @media (max-width: $tablet-width) {
       height:51px;

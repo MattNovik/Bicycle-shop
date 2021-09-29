@@ -4,6 +4,11 @@ const menuMob = document.querySelector('.menu-mob');
 const headerToggle = document.querySelector('.page-header__menu-toggle');
 const pageBody = document.querySelector('.page-body');
 const wrapperMainPage = document.querySelector('.wrapper-main-page');
+const form = document.querySelector('.wrapper-form__form');
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+const nameForm = document.querySelector('.name-form');
+const telForm = document.querySelector('.tel-form');
+const video = document.querySelector('.wrapper-video');
 
 pageHeader.classList.remove('page-header--nojs');
 menuMob.classList.remove('menu-mob--nojs');
@@ -48,9 +53,28 @@ const onMenuEscKeydown = (evt) => {
   }
 };
 
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  if (nameForm.value.length < 3 || telForm.value.match(/[^0-9]/gi)) {
+    form.classList.remove('wrapper-form__form--error');
+    form.classList.add('wrapper-form__form--error');
+  } else {
+    form.classList.remove('wrapper-form__form--error');
+    alert('Форма отправлена! Спасибо!')
+  }
+});
+
+const iframeVideo = () => {
+  return `<iframe src="https://www.youtube.com/embed/cGzQWgOuAfg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+};
+
+video.addEventListener('click', () => {
+  video.classList.add('wrapper-video--nopic');
+  video.innerHTML = iframeVideo();
+});
+
 //for smooth scroll js
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         e.preventDefault();

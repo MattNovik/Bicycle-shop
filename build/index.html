@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Bicycles</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -43,11 +47,11 @@
       </div>
       <div class="wrapper-form">
         <p class="wrapper-form__name">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <form class="wrapper-form__form" action="post">
-          <input type="text" placeholder="Введите Ваше Имя">
-          <label for=""></label>
-          <input type="number" placeholder="Введите Ваш номер телефона">
-          <label for=""></label>
+        <form class="wrapper-form__form" method="post" enctype="multipart/form-data" autocomplete="off">
+          <input type="text" placeholder="Введите Ваше Имя" id="name" class="name-form">
+          <label for="name"></label>
+          <input type="text" placeholder="Введите Ваш номер телефона" id="telephone" class="tel-form">
+          <label for="telephone"></label>
           <button type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
@@ -77,31 +81,37 @@
       <h2 class="bicycles-types__name">Виды велосипедов</h2>
       <ul class="bicycles-types-list">
         <li class="bicycles-types-list__element bicycles-types-list__element--road">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.webp 1x, img/RoadBicDes@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/RoadBicDes.jpg 1x, img/RoadBicDes@2x.jpg 2x">
-            <source srcset="img/RoadBicTabMob.webp 1x, img/RoadBicTabMob@2x.webp 2x" type="image/webp">
-            <img src="img/RoadBicTabMob.jpg" srcset="img/RoadBicTabMob.jpg 1x, img/RoadBicTabMob@2x.jpg 2x" alt="road-bicycle" width="342" height="503">
-          </picture>
-          <p>Дорожный велосипед</p>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/RoadBicDes.webp 1x, img/RoadBicDes@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/RoadBicDes.jpg 1x, img/RoadBicDes@2x.jpg 2x">
+              <source srcset="img/RoadBicTabMob.webp 1x, img/RoadBicTabMob@2x.webp 2x" type="image/webp">
+              <img src="img/RoadBicTabMob.jpg" srcset="img/RoadBicTabMob.jpg 1x, img/RoadBicTabMob@2x.jpg 2x" alt="road-bicycle" width="342" height="503">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </a>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--mount">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/MountBicDes.webp 1x, img/MountBicDes@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/MountBicDes.jpg 1x, img/MountBicDes@2x.jpg 2x">
-            <source srcset="img/MountBicTabMob.webp 1x, img/MountBicTabMob@2x.webp 2x" type="image/webp">
-            <img src="img/MountBicTabMob.jpg" srcset="img/MountBicTabMob.jpg 1x, img/MountBicTabMob@2x.jpg 2x" alt="mount-bicycle" width="342" height="566">
-          </picture>
-          <p>Горный велосипед</p>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/MountBicDes.webp 1x, img/MountBicDes@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/MountBicDes.jpg 1x, img/MountBicDes@2x.jpg 2x">
+              <source srcset="img/MountBicTabMob.webp 1x, img/MountBicTabMob@2x.webp 2x" type="image/webp">
+              <img src="img/MountBicTabMob.jpg" srcset="img/MountBicTabMob.jpg 1x, img/MountBicTabMob@2x.jpg 2x" alt="mount-bicycle" width="342" height="566">
+            </picture>
+            <p>Горный велосипед</p>
+          </a>
         </li>
         <li class="bicycles-types-list__element bicycles-types-list__element--child">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.webp 1x, img/ChildBicDes@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/ChildBicDes.jpg 1x, img/ChildBicDes@2x.jpg 2x">
-            <source srcset="img/ChildBicTabMoB.webp 1x, img/ChildBicTabMoB@2x.webp 2x" type="image/webp">
-            <img src="img/ChildBicTabMoB.jpg" srcset="img/ChildBicTabMoB.jpg 1x, img/ChildBicTabMoB@2x.jpg 2x" alt="child-bicycle" width="342" height="512">
-          </picture>
-          <p>Детский велосипед</p>
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/ChildBicDes.webp 1x, img/ChildBicDes@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/ChildBicDes.jpg 1x, img/ChildBicDes@2x.jpg 2x">
+              <source srcset="img/ChildBicTabMoB.webp 1x, img/ChildBicTabMoB@2x.webp 2x" type="image/webp">
+              <img src="img/ChildBicTabMoB.jpg" srcset="img/ChildBicTabMoB.jpg 1x, img/ChildBicTabMoB@2x.jpg 2x" alt="child-bicycle" width="342" height="512">
+            </picture>
+            <p>Детский велосипед</p>
+          </a>
         </li>
       </ul>
     </section>
@@ -109,7 +119,6 @@
       <h2 class="video__name">Видео про велосипеды</h2>
       <p class="video__info">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="wrapper-video">
-        <!-- <iframe src="https://www.youtube.com/embed/cGzQWgOuAfg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
     </section>
   </main>

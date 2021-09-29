@@ -5,6 +5,38 @@
   width:929px;
   height:522px;
   background-color: black;
+  background-image: url('../img/VidLayerDesk.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before {
+    content:"";
+    position: absolute;
+    top:calc(50% - 30px);
+    left:calc(50% - 30px);
+    width:60px;
+    height:60px;
+    background-image: url('../img/Play.svg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.wrapper-video--nopic {
+    background-image: none;
+
+    &:before{
+      content:none;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/VidLayerDes@2x.png');
+  }
 
   iframe {
     width:100%;
@@ -17,6 +49,15 @@
     left:calc(50% - 252px);
     width:503px;
     height:282px;
+    background-image: url('../img/VidLayerTab.png');
+
+    &:before{
+      content:none;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/VidLayerTab@2x.png');
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -24,5 +65,10 @@
     left:calc(50% - 144px);
     width:288px;
     height:161px;
+    background-image: url('../img/VidLayerMob.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/VidLayerMob@2x.png');
+    }
   }
 }
