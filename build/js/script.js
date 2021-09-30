@@ -20,13 +20,13 @@ headerToggle.addEventListener('click', () => {
     menuMob.classList.add('menu-mob--opened');
     headerToggle.classList.add('page-header__menu-toggle--opened')
     pageBody.classList.add('page-body--no-scroll');
-    document.addEventListener("keydown", onMenuEscKeydown);
+    document.addEventListener('keydown', onMenuEscKeydown);
   } else {
     menuMob.classList.add('menu-mob--closed');
     menuMob.classList.remove('menu-mob--opened');
     headerToggle.classList.remove('page-header__menu-toggle--opened')
     pageBody.classList.remove('page-body--no-scroll');
-    document.removeEventListener("keydown", onMenuEscKeydown);
+    document.removeEventListener('keydown', onMenuEscKeydown);
   }
 });
 
@@ -40,7 +40,7 @@ menuMob.addEventListener('click', (evt) => {
 });
 
 const isEscEvent = (evt) => {
-  return evt.key === "Escape" || evt.key === "Esc";
+  return evt.key === 'Escape' || evt.key === 'Esc';
 };
 
 const onMenuEscKeydown = (evt) => {
@@ -64,16 +64,14 @@ form.addEventListener('submit', (evt) => {
   }
 });
 
-const iframeVideo = () => {
-  return `<iframe src="https://www.youtube.com/embed/cGzQWgOuAfg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+const createIframeVideo = () => {
+  return `<iframe src='https://www.youtube.com/embed/cGzQWgOuAfg' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`
 };
 
 video.addEventListener('click', () => {
   video.classList.add('wrapper-video--nopic');
   video.innerHTML = iframeVideo();
 });
-
-//for smooth scroll js
 
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {

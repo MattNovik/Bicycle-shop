@@ -7,6 +7,26 @@
   height:706px;
   background: #131314;
 
+  p {
+    width:340px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    opacity: .7;
+    margin:20px 0 0 0;
+
+    @media (max-width: $tablet-width) {
+      width: 429px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      width: 288px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     height:413px;
   }
@@ -30,25 +50,5 @@
 
   @media (max-width: $mobile-width-only) {
     margin:84px 0 0 0;
-  }
-}
-
-.video__info {
-  width:340px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.005em;
-  color: #FFFFFF;
-  opacity: .7;
-  margin:20px 0 0 0;
-
-  @media (max-width: $tablet-width) {
-    width: 429px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    width: 288px;
   }
 }

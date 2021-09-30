@@ -14,16 +14,14 @@
 <body class="page-body">
   <header class="page-header page-header--nojs">
     <h1 class="visibility-hidden">Selling Bicyles</h1>
-    <div class="page-header__wrapper page-header__wrapper--desk">
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-list__element"><a href="#aboutus">О нас</a></li>
-          <li class="menu-list__element"><a href="#bicycle">Виды велосипедов</a></li>
-          <li class="menu-list__element"><a href="#video">Видео про велосипеды</a></li>
-          <li class="menu-list__element"><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list__element"><a href="#aboutus">О нас</a></li>
+        <li class="menu-list__element"><a href="#bicycle">Виды велосипедов</a></li>
+        <li class="menu-list__element"><a href="#video">Видео про велосипеды</a></li>
+        <li class="menu-list__element"><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
     <div class="page-header__wrapper page-header__wrapper--tablet-mob">
       <a href="#" class="logo-tablet-mob"><img src="img/logo.svg" alt="logo Bicycle" width="67" height="20" class="logo logo--image"></a>
       <span class="page-header__menu-toggle"></span>
@@ -50,7 +48,7 @@
         <form class="wrapper-form__form" method="post" enctype="multipart/form-data" autocomplete="off">
           <input type="text" placeholder="Введите Ваше Имя" id="name" class="name-form">
           <label for="name"></label>
-          <input type="text" placeholder="Введите Ваш номер телефона" id="telephone" class="tel-form">
+          <input type="number" placeholder="Введите Ваш номер телефона" id="telephone" class="tel-form">
           <label for="telephone"></label>
           <button type="submit">Подобрать велосипед мечты</button>
         </form>
@@ -61,19 +59,19 @@
       <ul class="advantages-list">
         <li class="advantages-list__element">
           <p class="advantages-list__element-number">01</p>
-          <p class="advantages-list__element-info">Самый широкий выбор велосипедов!</p>
+          <p>Самый широкий выбор велосипедов!</p>
         </li>
         <li class="advantages-list__element">
           <p class="advantages-list__element-number">02</p>
-          <p class="advantages-list__element-info">Доставка велосипедов по всей России!</p>
+          <p>Доставка велосипедов по всей России!</p>
         </li>
         <li class="advantages-list__element">
           <p class="advantages-list__element-number">03</p>
-          <p class="advantages-list__element-info">Большой выбор крутых аксессуаров!</p>
+          <p>Большой выбор крутых аксессуаров!</p>
         </li>
         <li class="advantages-list__element">
           <p class="advantages-list__element-number">04</p>
-          <p class="advantages-list__element-info">Профессиональные консультации!</p>
+          <p>Профессиональные консультации!</p>
         </li>
       </ul>
     </section>
@@ -83,10 +81,9 @@
         <li class="bicycles-types-list__element bicycles-types-list__element--road">
           <a href="#">
             <picture>
-              <source media="(min-width: 1024px)" srcset="img/RoadBicDes.webp 1x, img/RoadBicDes@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/RoadBicDes.jpg 1x, img/RoadBicDes@2x.jpg 2x">
-              <source srcset="img/RoadBicTabMob.webp 1x, img/RoadBicTabMob@2x.webp 2x" type="image/webp">
-              <img src="img/RoadBicTabMob.jpg" srcset="img/RoadBicTabMob.jpg 1x, img/RoadBicTabMob@2x.jpg 2x" alt="road-bicycle" width="342" height="503">
+              <!-- 1x: 270x300; 2x: 540x600 -->
+              <source srcset="img/road-bic-des.webp 1x, img/road-bic-des@2x.webp 2x" type="image/webp">
+              <img src="img/road-bic-des.jpg" srcset="img/road-bic-des.jpg 1x, img/road-bic-des@2x.jpg 2x" alt="road-bicycle" width="342" height="503">
             </picture>
             <p>Дорожный велосипед</p>
           </a>
@@ -94,10 +91,9 @@
         <li class="bicycles-types-list__element bicycles-types-list__element--mount">
           <a href="#">
             <picture>
-              <source media="(min-width: 1024px)" srcset="img/MountBicDes.webp 1x, img/MountBicDes@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/MountBicDes.jpg 1x, img/MountBicDes@2x.jpg 2x">
-              <source srcset="img/MountBicTabMob.webp 1x, img/MountBicTabMob@2x.webp 2x" type="image/webp">
-              <img src="img/MountBicTabMob.jpg" srcset="img/MountBicTabMob.jpg 1x, img/MountBicTabMob@2x.jpg 2x" alt="mount-bicycle" width="342" height="566">
+              <!-- 1x: 270x300; 2x: 540x600 -->
+              <source srcset="img/mount-bic-des.webp 1x, img/mount-bic-des@2x.webp 2x" type="image/webp">
+              <img src="img/mount-bic-des.jpg" srcset="img/mount-bic-des.jpg 1x, img/mount-bic-des@2x.jpg 2x" alt="mount-bicycle" width="342" height="566">
             </picture>
             <p>Горный велосипед</p>
           </a>
@@ -105,10 +101,9 @@
         <li class="bicycles-types-list__element bicycles-types-list__element--child">
           <a href="#">
             <picture>
-              <source media="(min-width: 1024px)" srcset="img/ChildBicDes.webp 1x, img/ChildBicDes@2x.webp 2x" type="image/webp">
-              <source media="(min-width: 1024px)" srcset="img/ChildBicDes.jpg 1x, img/ChildBicDes@2x.jpg 2x">
-              <source srcset="img/ChildBicTabMoB.webp 1x, img/ChildBicTabMoB@2x.webp 2x" type="image/webp">
-              <img src="img/ChildBicTabMoB.jpg" srcset="img/ChildBicTabMoB.jpg 1x, img/ChildBicTabMoB@2x.jpg 2x" alt="child-bicycle" width="342" height="512">
+              <!-- 1x: 270x300; 2x: 540x600 -->
+              <source srcset="img/child-bic-des.webp 1x, img/child-bic-des@2x.webp 2x" type="image/webp">
+              <img src="img/child-bic-des.jpg" srcset="img/child-bic-des.jpg 1x, img/child-bic-des@2x.jpg 2x" alt="child-bicycle" width="342" height="512">
             </picture>
             <p>Детский велосипед</p>
           </a>
@@ -117,7 +112,7 @@
     </section>
     <section class="video" id="video">
       <h2 class="video__name">Видео про велосипеды</h2>
-      <p class="video__info">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="wrapper-video">
       </div>
     </section>
@@ -125,7 +120,7 @@
   <footer class="page-footer">
     <section class="contacts" id="contacts">
       <h2 class="contacts__name">Как нас найти?</h2>
-      <p class="contacts__place">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="wrapper-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.320894616211245!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1632735203862!5m2!1sru!2sru" title="google Map" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -135,6 +130,6 @@
       </div>
     </section>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

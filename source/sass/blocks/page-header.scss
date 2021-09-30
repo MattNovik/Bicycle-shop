@@ -8,14 +8,7 @@
   }
 }
 .page-header__wrapper {
-  &.page-header__wrapper--desk {
-    width:873px;
-    margin:0 auto;
 
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
   &.page-header__wrapper--tablet-mob {
     display: none;
 

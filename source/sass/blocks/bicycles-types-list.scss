@@ -4,6 +4,12 @@
   width:1126px;
   margin:51px 0 0 0;
   padding:0;
+  list-style-type: none;
+
+  a {
+    color:#000;
+    text-decoration: none;
+  }
 
   @media (max-width: $desktop-medium-width) {
     width:900px;
@@ -43,6 +49,11 @@
   @media (max-width: $tablet-width) {
     width:270px;
     height:354px;
+
+    img {
+      border-radius: 10px;
+      object-fit: cover;
+    }
   }
 
   p {
@@ -59,6 +70,7 @@
 .bicycles-types-list__element--road {
   height:559px;
   z-index: 1;
+  margin:10px 0 0 0;
 
   &:before {
     content:"";
@@ -167,7 +179,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin:40px 0 0 0;
+    margin:42px 0 0 0;
   }
 }
 .bicycles-types-list__element--child {
@@ -212,7 +224,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin:40px 0 0 0;
+    margin:43px 0 0 0;
 
     &:before {
       right:-15px;

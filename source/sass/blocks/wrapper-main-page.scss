@@ -5,29 +5,29 @@
   right:0;
   height: 1250px;
   z-index: -1;
-  background-image: url("../img/MainDes.jpg");
+  background-image: url("../img/main-des.webp");
   background-repeat: no-repeat;
   background-size:100% 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/MainDes@2x.jpg");
+    background-image: url("../img/main-des@2x.webp");
   }
 
   @media (max-width: $super-extra-width) {
     height:1050px;
-    background-image: url("../img/MainDesSuperExtra.jpg");
+    background-image: url("../img/main-des-super-extra.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/MainDesSuperExtra@2x.jpg");
+      background-image: url("../img/main-des-super-extra@2x.webp");
     }
   }
 
   @media (max-width: $extra-width) {
     height:930px;
-    background-image: url("../img/MainDesExtra.jpg");
+    background-image: url("../img/main-des-extra.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/MainDesExtra@2x.jpg");
+      background-image: url("../img/main-des-extra@2x.webp");
     }
   }
 
@@ -41,22 +41,22 @@
 
   @media (max-width: $tablet-width) {
     height:340px;
-    background-image: url("../img/MainTab.jpg");
+    background-image: url("../img/main-tab.webp");
 
     &.wrapper-main-page--nojs {
       top:330px;
     }
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/MainTab@2x.jpg");
+      background-image: url("../img/main-tab@2x.webp");
     }
   }
 
   @media (max-width: $mobile-width-only) {
     height:390px;
-    background-image: url("../img/MainMob.jpg");
+    background-image: url("../img/main-mob.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/MainMob@2x.jpg");
+      background-image: url("../img/main-mob@2x.webp");
     }
   }
 }

@@ -5,7 +5,7 @@
   width:929px;
   height:522px;
   background-color: black;
-  background-image: url('../img/VidLayerDesk.png');
+  background-image: url('../img/vid-layer-desk.webp');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -21,7 +21,7 @@
     left:calc(50% - 30px);
     width:60px;
     height:60px;
-    background-image: url('../img/Play.svg');;
+    background-image: url('../img/play.svg');;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -35,7 +35,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../img/VidLayerDes@2x.png');
+    background-image: url('../img/vid-layer-des@2x.webp');
   }
 
   iframe {
@@ -49,14 +49,14 @@
     left:calc(50% - 252px);
     width:503px;
     height:282px;
-    background-image: url('../img/VidLayerTab.png');
+    background-image: url('../img/vid-layer-tab.webp');
 
     &:before{
       content:none;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/VidLayerTab@2x.png');
+      background-image: url('../img/vid-layer-tab@2x.webp');
     }
   }
 
@@ -65,10 +65,10 @@
     left:calc(50% - 144px);
     width:288px;
     height:161px;
-    background-image: url('../img/VidLayerMob.png');
+    background-image: url('../img/vid-layer-mob.webp');
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/VidLayerMob@2x.png');
+      background-image: url('../img/vid-layer-mob@2x.webp');
     }
   }
 }
