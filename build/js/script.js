@@ -70,7 +70,7 @@ const createIframeVideo = () => {
 
 video.addEventListener('click', () => {
   video.classList.add('wrapper-video--nopic');
-  video.innerHTML = iframeVideo();
+  video.innerHTML = createIframeVideo();
 });
 
 for (let smoothLink of smoothLinks) {
