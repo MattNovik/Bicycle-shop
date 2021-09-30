@@ -5,32 +5,47 @@
   right:0;
   height: 1250px;
   z-index: -1;
-  background-image: image-set (
+  background-image: url("../img/main-des.jpg");
+  background-image: image-set(
     url("../img/main-des.webp") type("image/webp"),
-    url("../img/main-des.jpeg") type("image/jpeg"));
+    url("../img/main-des.jpg") type("image/jpeg"));
   background-repeat: no-repeat;
   background-size:100% 100%;
   background-color: #000;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-des@2x.webp");
+    background-image: image-set(
+      url("../img/main-des@2x.webp") type("image/webp"),
+      url("../img/main-des@2x.jpg") type("image/jpeg"));
   }
 
   @media (max-width: $super-extra-width) {
     height:1050px;
-    background-image: url("../img/main-des-super-extra.webp");
+    background-image: url("../img/main-des-super-extra.jpg");
+    background-image: image-set(
+      url("../img/main-des-super-extra.webp") type("image/webp"),
+      url("../img/main-des-super-extra.jpg") type("image/jpeg"));
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-des-super-extra@2x.webp");
+      background-image: url("../img/main-des-super-extra@2x.jpg");
+      background-image: image-set(
+        url("../img/main-des-super-extra@2x.webp") type("image/webp"),
+        url("../img/main-des-super-extra@2x.jpg") type("image/jpeg"));
     }
   }
 
   @media (max-width: $extra-width) {
     height:930px;
-    background-image: url("../img/main-des-extra.webp");
+    background-image: url("../img/main-des-extra.jpg");
+    background-image: image-set(
+      url("../img/main-des-extra.webp") type("image/webp"),
+      url("../img/main-des-extra.jpg") type("image/jpeg"));
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-des-extra@2x.webp");
+      background-image: url("../img/main-des-extra@2x.jpg");
+      background-image: image-set(
+        url("../img/main-des-extra@2x.webp") type("image/webp"),
+        url("../img/main-des-extra@2x.jpg") type("image/jpeg"));
     }
   }
 
@@ -44,24 +59,30 @@
 
   @media (max-width: $tablet-width) {
     height:340px;
-    background-image: url("../img/main-tab.webp");
+    background-image: image-set(
+      url("../img/main-tab.webp") type("image/webp"),
+      url("../img/main-tab.jpg") type("image/jpeg"));
 
     &.wrapper-main-page--nojs {
       top:330px;
     }
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-tab@2x.webp");
+      background-image: image-set(
+        url("../img/main-tab@2x.webp") type("image/webp"),
+        url("../img/main-tab@2x.jpg") type("image/jpeg"));
     }
   }
 
   @media (max-width: $mobile-width-only) {
     height:390px;
-    background-image: url("../img/main-mob.webp");
+    background-image: image-set(
+    url("../img/main-mob.webp") type("image/webp"),
+    url("../img/main-mob.jpg") type("image/jpeg"));
 
     @media (min-resolution: 2dppx) {
-      background-image: image-set (
+      background-image: image-set(
         url("../img/main-mob@2x.webp") type("image/webp"),
-        url("../img/main-mob@2x.jpeg") type("image/jpeg"));
+        url("../img/main-mob@2x.jpg") type("image/jpeg"));
     }
   }
 }

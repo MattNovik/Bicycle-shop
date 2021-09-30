@@ -5,7 +5,10 @@
   width:929px;
   height:522px;
   background-color: #000;
-  background-image: url('../img/vid-layer-desk.webp');
+  background-image: url('../img/vid-layer-desk.png');
+  background-image: image-set(
+    url("../img/vid-layer-desk.webp") type("image/webp"),
+    url("../img/vid-layer-desk.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -38,7 +41,10 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../img/vid-layer-des@2x.webp');
+    background-image: url('../img/vid-layer-des@2x.png');
+    background-image: image-set(
+      url("../img/vid-layer-des@2x.webp") type("image/webp"),
+      url("../img/vid-layer-des@2x.png") type("image/png"));
   }
 
   iframe {
@@ -52,14 +58,20 @@
     left:calc(50% - 252px);
     width:503px;
     height:282px;
-    background-image: url('../img/vid-layer-tab.webp');
+    background-image: url('../img/vid-layer-tab.png');
+    background-image: image-set(
+      url("../img/vid-layer-tab.webp") type("image/webp"),
+      url("../img/vid-layer-tab.png") type("image/png"));
 
     &:before{
       content:none;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/vid-layer-tab@2x.webp');
+      background-image: url('../img/vid-layer-tab@2x.jpg');
+      background-image: image-set(
+        url("../img/vid-layer-tab@2x.webp") type("image/webp"),
+        url("../img/vid-layer-tab@2x.png") type("image/png"));
     }
   }
 
@@ -68,10 +80,16 @@
     left:calc(50% - 144px);
     width:288px;
     height:161px;
-    background-image: url('../img/vid-layer-mob.webp');
+    background-image: url('../img/vid-layer-mob.jpg');
+    background-image: image-set(
+      url("../img/vid-layer-mob.webp") type("image/webp"),
+      url("../img/vid-layer-mob.png") type("image/png"));
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/vid-layer-mob@2x.webp');
+      background-image: url('../img/vid-layer-mob@2x.png');
+      background-image: image-set(
+        url("../img/vid-layer-mob@2x.webp") type("image/webp"),
+        url("../img/vid-layer-mob@2x.png") type("image/png"));
     }
   }
 }
