@@ -24,15 +24,17 @@
 .menu-list__element {
   margin:12px 0 0 0;
 
-  &:hover {
-      transform: scale(1.15);
-  }
-
   a {
     text-decoration: none;
     color:#fff;
     line-height: 32px;
     white-space: nowrap;
+  }
+
+  &:hover {
+    a {
+      color: $main;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -47,11 +49,6 @@
 
     &:hover {
       background:#666161 ;
-      transform: none;
-
-      a {
-        transform: none;
-      }
     }
 
     a {
