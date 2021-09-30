@@ -55,12 +55,13 @@ const onMenuEscKeydown = (evt) => {
 
 form.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  if (nameForm.value.length < 3 || telForm.value.match(/[^0-9]/gi)) {
-    form.classList.remove('wrapper-form__form--error');
-    form.classList.add('wrapper-form__form--error');
-  } else {
+  let regexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+  if (nameForm.value.length > 1 && !!telForm.value.match(regexp)) {
     form.classList.remove('wrapper-form__form--error');
     alert('Форма отправлена! Спасибо!')
+  } else {
+    form.classList.remove('wrapper-form__form--error');
+    form.classList.add('wrapper-form__form--error');
   }
 });
 

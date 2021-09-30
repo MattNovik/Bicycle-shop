@@ -5,9 +5,12 @@
   right:0;
   height: 1250px;
   z-index: -1;
-  background-image: url("../img/main-des.webp");
+  background-image: image-set (
+    url("../img/main-des.webp") type("image/webp"),
+    url("../img/main-des.jpeg") type("image/jpeg"));
   background-repeat: no-repeat;
   background-size:100% 100%;
+  background-color: #000;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-des@2x.webp");
@@ -56,7 +59,9 @@
     background-image: url("../img/main-mob.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-mob@2x.webp");
+      background-image: image-set (
+        url("../img/main-mob@2x.webp") type("image/webp"),
+        url("../img/main-mob@2x.jpeg") type("image/jpeg"));
     }
   }
 }

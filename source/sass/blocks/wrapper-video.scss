@@ -4,14 +4,17 @@
   left:calc(50% - 464px);
   width:929px;
   height:522px;
-  background-color: black;
+  background-color: #000;
   background-image: url('../img/vid-layer-desk.webp');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
+  border:solid 1px #000;
+  box-sizing: border-box;
 
   &:hover {
     cursor: pointer;
+    border:solid 1px $main;
   }
 
   &:before {

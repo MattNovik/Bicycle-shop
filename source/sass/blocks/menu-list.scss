@@ -20,7 +20,11 @@
 .menu-list__element {
   margin:21px 0 9px 0;
 
-
+  &:hover {
+    a {
+      transform: scale(1.15);
+    }
+  }
 
   a {
     text-decoration: none;
@@ -41,6 +45,10 @@
 
     &:hover {
       background:#666161 ;
+
+      a {
+        transform: none;
+      }
     }
 
     a {

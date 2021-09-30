@@ -38,6 +38,18 @@
   width:342px;
   border-radius: 10px;
 
+  img {
+    border-radius: 10px;
+    border:solid 1px transparent;
+  }
+
+  &:hover {
+
+    img {
+      border:solid 1px $main;
+    }
+  }
+
   @media (max-width: $desktop-medium-width) {
     width:290px;
 

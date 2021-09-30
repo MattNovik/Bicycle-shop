@@ -41,6 +41,10 @@
     border-radius: 6px;
     padding:14px 0 10px 29px;
 
+    &:hover {
+      border:2px solid rgb(76, 74, 241);
+    }
+
     &:focus {
       border:2px solid $main;
     }
@@ -76,6 +80,7 @@
 
     &:hover {
       cursor: pointer;
+      background-color: rgb(76, 74, 241);
     }
 
     @media (max-width: $tablet-width) {

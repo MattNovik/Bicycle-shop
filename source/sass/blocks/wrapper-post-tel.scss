@@ -18,7 +18,7 @@
     flex-direction: column;
     width:288px;
     height:auto;
-    margin:15px 0 51px 0;
+    margin:22px 0 51px 0;
   }
 }
 
@@ -28,6 +28,10 @@
   line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
   padding:0 0 0 41px;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 
   &:before {
     content:"";
@@ -67,6 +71,10 @@
   line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
   padding:0 0 0 37px;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 
   &:before {
     content:"";
