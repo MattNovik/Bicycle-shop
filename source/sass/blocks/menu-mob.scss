@@ -6,7 +6,6 @@
 
   &.menu-mob--opened {
     display: flex;
-    overflow: auto;
   }
 
   @media (max-width: $tablet-width) {

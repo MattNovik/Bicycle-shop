@@ -1,10 +1,11 @@
 .bicycles-types-list {
   display: flex;
   justify-content: space-between;
-  width:1126px;
-  margin:51px 0 0 0;
-  padding:0;
+  width:1242px;
+  padding:35px 0 0 0;
   list-style-type: none;
+  overflow-x: auto;
+  overflow-y: hidden;
 
   a {
     color:#000;
@@ -18,7 +19,8 @@
   @media (max-width: $tablet-width) {
     width:100%;
     max-width:840px;
-    margin:30px 89px 70px 89px;
+    padding: 0;
+    margin:25px 89px 70px 89px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -51,10 +53,10 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    width:290px;
+    width:250px;
 
     img {
-      width:280px;
+      width:240px;
     }
   }
 
@@ -75,14 +77,14 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: #000000;
-    margin:15px 0 0 0;
+    margin:13px 0 0 0;
   }
 }
 
 .bicycles-types-list__element--road {
   height:559px;
   z-index: 1;
-  margin:10px 0 0 0;
+  margin:10px 0 0 60px;
 
   &:before {
     content:"";
@@ -98,10 +100,10 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:469px;
+    height:404px;
 
     img {
-      height:412px;
+      height:347px;
     }
 
     &:before {
@@ -138,8 +140,8 @@
   }
 }
 .bicycles-types-list__element--mount {
-  margin:39px 50px 0;
   height:622px;
+  margin:39px 0 0;
 
   &:before {
     content:"";
@@ -164,11 +166,11 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:520px;
+    height:450px;
     margin:39px 0 0;
 
     img {
-      height:464px;
+      height:394px;
     }
   }
 
@@ -196,6 +198,7 @@
 }
 .bicycles-types-list__element--child {
   height:569px;
+  margin:0 56px 0 0;
 
   &:before {
     content:"";
@@ -210,10 +213,10 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:477px;
+    height:411px;
 
     img {
-      height:420px;
+      height:354px;
     }
   }
 
