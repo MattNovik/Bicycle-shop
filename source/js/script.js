@@ -85,3 +85,30 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+nameForm.addEventListener('input', () => {
+  const valueLength = nameForm.value.length;
+  if (valueLength < 2) {
+    nameForm.setCustomValidity(`Eщё ${2 - valueLength} сим.`);
+  } else {
+    nameForm.setCustomValidity('');
+  }
+
+  nameForm.reportValidity();
+});
+
+telForm.addEventListener('input', () => {
+  const valueLength = telForm.value.length;
+  let regexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+  if (valueLength < 10) {
+    telForm.setCustomValidity(`Eщё мин.${10 - valueLength} сим.`);
+  } else if (telForm.value[0] === '+' && telForm.value[1] !== '7') {
+    telForm.setCustomValidity(`при наличии +, вторым числом должна быть 7`);
+  } else if (!!!telForm.value.match(regexp)) {
+    telForm.setCustomValidity(`только цифры`);
+  } else {
+    telForm.setCustomValidity('');
+  }
+
+  telForm.reportValidity();
+});

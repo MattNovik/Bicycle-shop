@@ -1,7 +1,5 @@
 .wrapper-video {
-  position: absolute;
-  top:282px;
-  left:calc(50% - 464px);
+  position: relative;
   width:929px;
   height:522px;
   background-color: #000;
@@ -14,6 +12,8 @@
   z-index: 10;
   border:solid 1px #000;
   box-sizing: border-box;
+  margin:56px 0 -98px 0;
+  overflow-y: visible;
 
   &:hover {
     cursor: pointer;
@@ -54,14 +54,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    top:216px;
-    left:calc(50% - 252px);
     width:503px;
     height:282px;
     background-image: url('../img/vid-layer-tab.png');
     background-image: image-set(
       url("../img/vid-layer-tab.webp") type("image/webp"),
       url("../img/vid-layer-tab.png") type("image/png"));
+    margin:40px 0 -85px 0;
 
     &:before{
       content:none;
@@ -76,14 +75,13 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    top:271px;
-    left:calc(50% - 144px);
     width:288px;
     height:161px;
     background-image: url('../img/vid-layer-mob.png');
     background-image: image-set(
       url("../img/vid-layer-mob.webp") type("image/webp"),
       url("../img/vid-layer-mob.png") type("image/png"));
+    margin:52px 0 -45px 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/vid-layer-mob@2x.png');

@@ -1,8 +1,9 @@
 .menu-list {
   display: flex;
-  height:62px;
+  line-height:32px;
   justify-content:space-between;
   align-items:center;
+  flex-wrap: wrap;
   margin:0 20px;
   padding:0;
   font-weight: 300;
@@ -10,6 +11,7 @@
   list-style-type: none;
   overflow-x: auto;
   overflow-y: hidden;
+  border-bottom:1px solid rgba(255, 255, 255, 0.2);
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -22,9 +24,10 @@
 }
 
 .menu-list__element {
-  margin:12px 0 0 0;
+  margin:21px 0 9px 0;
 
   a {
+    width:100%;
     text-decoration: none;
     color:#fff;
     line-height: 32px;
