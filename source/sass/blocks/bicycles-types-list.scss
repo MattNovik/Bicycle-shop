@@ -1,6 +1,6 @@
 .bicycles-types-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width:1242px;
   padding:35px 0 0 0;
@@ -36,9 +36,53 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width:342px;
   border-radius: 10px;
+  height: auto;
+
+  &:nth-child(2) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &:nth-child(n+2) {
+    @media (max-width: $mobile-width-only) {
+      margin-top:40px;
+    }
+  }
+
+
+  &:nth-child(2n+1) {
+    @media (max-width: $tablet-width) {
+      margin-right:50px;
+    }
+    @media (max-width: $mobile-width-only) {
+      margin-right:0;
+    }
+  }
+
+  &:nth-child(n+4) {
+    margin-right: 20px;
+    margin-left: 20px;
+    @media (max-width: $tablet-width) {
+      margin-top:50px;
+    }
+    @media (max-width: $mobile-width-only) {
+      margin-left:0;
+      margin-top:38px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin:13px 0 0 0;
+  }
 
   img {
     border-radius: 10px;
@@ -62,53 +106,30 @@
 
   @media (max-width: $tablet-width) {
     width:270px;
-    height:354px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+      margin-left: 0;
+    }
 
     img {
       border-radius: 10px;
       object-fit: cover;
     }
   }
-
-  &:nth-child(2n+1) {
-    @media (max-width: $tablet-width) {
-      margin-right:50px;
-    }
-    @media (max-width: $mobile-width-only) {
-      margin-right:0;
-    }
-  }
-
-  &:nth-child(n+3) {
-    @media (max-width: $tablet-width) {
-      margin-top:50px;
-    }
-    @media (max-width: $mobile-width-only) {
-      margin-top:42px;
-    }
-  }
-
-  &:nth-child(n+2) {
-    @media (max-width: $mobile-width-only) {
-      margin-top:42px;
-    }
-  }
-
-  p {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    color: #000000;
-    margin:13px 0 0 0;
-  }
 }
 
 .bicycles-types-list__element--road {
-  height:559px;
   z-index: 1;
   margin:10px 0 0 60px;
+
+  &:nth-child(n+3) {
+    margin-top:50px;
+    @media (max-width:$mobile-width-only) {
+      margin-right:0;
+      margin-left:0
+    }
+  }
 
   &:before {
     content:"";
@@ -124,7 +145,6 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:404px;
 
     img {
       height:347px;
@@ -138,7 +158,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    height:354px;
     margin:0;
 
     img {
@@ -164,33 +183,47 @@
   }
 }
 .bicycles-types-list__element--mount {
-  height:622px;
   margin:39px 0 0;
 
-  &:before {
-    content:"";
-    position: absolute;
-    top:-18px;
-    left:-19px;
-    width:47px;
-    height:47px;
-    border: 8px solid #0AD9C6;
-    box-sizing: border-box;
+  &:nth-child(n+3) {
+    margin-top:50px;
+    margin-right:40px;
+
+    @media (max-width:$mobile-width-only) {
+      margin-right:0;
+    }
+  }
+  a {
+    position: relative;
+
+    &:before {
+      content:"";
+      position: absolute;
+      top:-18px;
+      left:-19px;
+      width:47px;
+      height:47px;
+      border: 8px solid #0AD9C6;
+      box-sizing: border-box;
+    }
   }
 
-  &:after {
-    content:"";
-    position: absolute;
-    bottom:32px;
-    right:-24px;
-    width:47px;
-    height:47px;
-    border: 8px solid #0AD9C6;
-    box-sizing: border-box;
+  a {
+    position: relative;
+
+    &:after {
+      content:"";
+      position: absolute;
+      bottom:32px;
+      right:-24px;
+      width:47px;
+      height:47px;
+      border: 8px solid #0AD9C6;
+      box-sizing: border-box;
+    }
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:450px;
     margin:39px 0 0;
 
     img {
@@ -199,20 +232,22 @@
   }
 
   @media (max-width: $tablet-width) {
-    height:354px;
     margin:0;
 
     img {
       width:270px;
       height:300px;
     }
-
-    &:before {
-      content:none;
+    a {
+      &:before {
+        content:none;
+      }
     }
 
-    &:after {
-      content:none;
+    a {
+      &:after {
+        content:none;
+      }
     }
   }
 
@@ -221,8 +256,13 @@
   }
 }
 .bicycles-types-list__element--child {
-  height:569px;
   margin:0 56px 0 0;
+
+  &:nth-child(n+4) {
+    margin-top:50px;
+    margin-right:0;
+    margin-left:0
+  }
 
   &:before {
     content:"";
@@ -237,7 +277,6 @@
   }
 
   @media (max-width: $desktop-medium-width) {
-    height:411px;
 
     img {
       height:354px;
@@ -245,7 +284,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    height:354px;
     margin:0;
 
     &:nth-child(n) {
